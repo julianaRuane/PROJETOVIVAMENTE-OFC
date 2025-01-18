@@ -1,0 +1,107 @@
+/*Lugar de importação da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,500;1,600&display=swap');
+
+* {
+    /*magens da tela*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/*PADRONIZAÇÃO GERAL - CONTROLE DE PADRÃO AQUI*/
+:root {
+/*paleta de cor*/
+--white-color: #fff;
+--dark-color: rgb(0, 0, 0);
+--primary-color: rgb(77, 43, 167) ;
+--secondary-color: rgb(255, 255, 255);
+--ligth-pink-color: #fff;
+--medium-gray-color: #d3b5fd;
+
+/*tamanho da fonte*/
+--font-size-s: 0.9rem;
+--font-size-n: 1rem;
+--font-size-m: 1.12rem;
+--font-size-l: 1.5rem;
+--font-size-xl: 1.9rem;
+--font-size-xxl: 2.3rem;
+
+/*peso da fonte*/
+--font-weight-normal:400;
+--font-weight-medium:500;
+--font-weight-semibold:600;
+--font-weight-bold:700;
+
+/*raio(curvatura) da borda*/
+--border-radius-s: 8px;
+--border-radius-m: 30px;
+--border-radius-circle: 50px;
+
+/*largura máxima do site*/
+--site-max-width: 1300px;
+
+}
+
+/*Tela inicial Geral - !Estilo para todo o site! */
+ul {
+   list-style: none; 
+}
+
+a{
+text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+igm {
+width: 100%;
+}
+
+.section-content{
+margin: 0 auto;
+padding: 0 20px;
+max-width: var(--site-max-width)
+}
+
+/*estilo do Menu/navbar*/
+ header {
+background: var(--primary-color);
+}
+
+header .navbar {
+display: flex;
+padding: 20px;
+align-items:center;
+justify-content: space-between;
+
+}
+
+.navbar .nav-logo .logo-text {
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu {
+display: flex;
+gap: 10px;
+
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}

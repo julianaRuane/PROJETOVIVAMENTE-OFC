@@ -1,0 +1,2 @@
+Olá! Esse é o meu primeiro projeto de site, estou iniciando ele dia 18/01/2025 - 14:00.
+Este é um projeto de escola em grupo (Juliana, Ana Beatriz e Kelven) do IFPE-Campus Jaboatão referente a disciplina de PP1.
