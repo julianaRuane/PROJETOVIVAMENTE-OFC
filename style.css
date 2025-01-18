@@ -14,8 +14,8 @@
 /*paleta de cor*/
 --white-color: #fff;
 --dark-color: rgb(0, 0, 0);
---primary-color: rgb(77, 43, 167) ;
---secondary-color: rgb(255, 255, 255);
+--primary-color: rgb(85, 67, 188) ;
+--secondary-color: rgb(56, 33, 138);
 --ligth-pink-color: #fff;
 --medium-gray-color: #d3b5fd;
 
@@ -70,6 +70,9 @@ max-width: var(--site-max-width)
 
 /*estilo do Menu/navbar*/
  header {
+position: fixed;
+width: 100%;
+z-index: 5;
 background: var(--primary-color);
 }
 
@@ -103,5 +106,50 @@ gap: 10px;
 
 .navbar .nav-menu .nav-link:hover {
     color: var(--primary-color);
-    background: var(--secondary-color);
+    background: var(--white-color);
+}
+
+/*Seção do Heroi? ,_,*/
+
+.hero-section {
+    min-height: 100vh;
+background: var(--primary-color);
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
+
+.hero-section .hero-details .title{
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+
+   
+}
+
+.hero-section .hero-details .subtitle{
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: ]var(--font-weight-semibold);
+}
+
+.hero-section .hero-details .description{
+   max-width: 70%;
+   margin: 24px 0 40px; 
+font-size: var(--font-size-m);
+}
+
+.hero-section .hero-details {
+    
+}
+
+.hero-section .hero-image-wrapper{
+    max-width: 500px;
+    margin-right: 30px;
+
 }
