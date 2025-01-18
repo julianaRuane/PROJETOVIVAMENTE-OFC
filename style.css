@@ -109,6 +109,12 @@ gap: 10px;
     background: var(--white-color);
 }
 
+.navbar :where(#menu-close-button, #menu-open-button){
+display: none;
+
+
+}
+
 /*Seção do Heroi? ,_,*/
 
 .hero-section {
@@ -144,12 +150,92 @@ background: var(--primary-color);
 font-size: var(--font-size-m);
 }
 
-.hero-section .hero-details {
-    
+.hero-section .hero-details .buttons{
+
+display: flex;
+gap: 23px;
+}
+
+.hero-section .hero-details .button {
+padding: 10px 26px;
+border: 2px solid transparent;
+color: var(--primary-color);
+border-radius: var(--border-radius-m);
+background: var(--white-color);
+font-weight: var(--font-weight-medium);
+transition: 0.3s ease;
+}
+
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .contact-us{
+color: var(--white-color);
+border-color: var(--white-color);
+background: transparent;
+
+}
+
+.hero-section .hero-details .contact-us:hover{
+    color: var(--secondary-color);
+    border-color: var(--white-color);
+    background: var(--white-color);
 }
 
 .hero-section .hero-image-wrapper{
     max-width: 500px;
     margin-right: 30px;
 
+}
+
+/*n entendi ainda*/
+@media screen and (max-width: 900px){
+
+    :root{
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+
+    .navbar :where(#menu-close-button, #menu-open-button){
+        display: block;
+font-size: var(--font-size-l);
+    }
+
+    .navbar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navbar #menu-open-button{
+        color: var(--white-color);
+    }
+
+    .navbar .nav-menu .nav-link:hover {
+        color: var(--white-color);
+        background: var(--primary-color);
+    }
+
+    .navbar .nav-menu  {
+display:block;
+position: fixed;
+left:-300px;
+top: 0;
+width: 300px;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 100px;
+background: var(--white-color);
+    }
+
+    body.show-mobile-menu .navbar .nav-menu
+
+    .navbar .nav-menu .nav-link {
+        color: var(--dark-color);
+        display:block;
+        margin-top: 17px;
+        font-size: var(--font-size-l);
+    }
 }
