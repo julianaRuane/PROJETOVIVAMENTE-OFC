@@ -43,6 +43,7 @@
 
 }
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -143,13 +144,13 @@ background: var(--primary-color);
 
 .hero-section .hero-details .subtitle{
     margin-top: 8px;
-    max-width: 70%;
+    max-width: 45%;
     font-size: var(--font-size-xl);
     font-weight: ]var(--font-weight-semibold);
 }
 
 .hero-section .hero-details .description{
-   max-width: 70%;
+   max-width: 65%;
    margin: 24px 0 40px; 
 font-size: var(--font-size-m);
 }
@@ -187,7 +188,9 @@ background: transparent;
 .hero-section .hero-image-wrapper{
     max-width: 500px;
     margin-right: 40px;
+
 }
+
 
 /*menu lateral adaptavel*/
 @media screen and (max-width: 900px){
@@ -320,6 +323,29 @@ gap: 60px;
     }
 }
 
+/*Seção podcast*/
+
+
+
+.podcast .podcast-list{
+    display: flex;
+flex-wrap: wrap;
+gap: 110px;
+align-items: center;
+justify-content: space-between;
+}
+.podcast .podcast-list .geral{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+
+
+}
+
+
 /*Seção sobre nós*/
 .section-title{
     text-align: center;
@@ -392,3 +418,5 @@ font-size: var(--font-size-m);
     border-radius: var(--border-radius-s);
         background: var(--primary-color);
     }
+
+ 
