@@ -7,4 +7,20 @@ document.body.classList.toggle("show-mobile-menu");
 
 });
 /*fechando menu*/
-menuCloseButton.addEventListener("click", () => menuOpenButton.click())
+menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+
+const swiper = new Swiper('.slider-wrapper', {
+    loop: true,
+    
+    
+    pagination: {
+    el: '.swiper-pagination',
+    },
+  
+    
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    
+    });

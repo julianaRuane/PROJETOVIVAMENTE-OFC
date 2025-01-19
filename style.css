@@ -43,6 +43,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*Tela inicial Geral - !Estilo para todo o site! */
 ul {
    list-style: none; 
@@ -280,10 +284,10 @@ margin-right: 0px;
 
 /*Seção sobre nós*/
 .section-title{
-text-align: center;
-padding: 60px 0 100px;
-text-transform: uppercase;
-font-size: var(--font-size-xl);
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
 }
 
 .section-title::after{
@@ -326,4 +330,21 @@ font-size: var(--font-size-m);
 
     .about-section .about .feedback{
         line-height: 25px;
+    }
+
+    .about-section .about .objetivo {
+        text-align: center;
+        padding: 55px 0 20px;
+        text-transform: uppercase;
+        font-size: var(--font-size-xl);
+    }
+
+    .about-section .about .objetivo::after{
+        content: "";
+        width: 400px;
+        height: 2px;
+        display:block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+        background: var(--primary-color);
     }
