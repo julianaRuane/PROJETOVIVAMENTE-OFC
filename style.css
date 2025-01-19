@@ -119,7 +119,7 @@ display: none;
 
 }
 
-/*Seção do Heroi? ,_,*/
+/*Seção do Heroi? ,_, (é a tela inicial rsrs)*/
 
 .hero-section {
     min-height: 100vh;
@@ -189,7 +189,7 @@ background: transparent;
     margin-right: 40px;
 }
 
-/*n entendi ainda*/
+/*menu lateral adaptavel*/
 @media screen and (max-width: 900px){
 
     :root{
@@ -282,6 +282,44 @@ margin-right: 0px;
 
 }
 
+/*seção distrações*/
+
+.distracao-section .menu-list {
+
+display: flex;
+flex-wrap: wrap;
+gap: 110px;
+align-items: center;
+justify-content: space-between;
+}
+
+.distracao-section .menu-list .menu-item {
+  
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+
+}
+
+.distracao-section .menu-list .name{
+  
+    padding: 50px 0 20px;
+    font-size: var(--font-size-l);
+}
+
+@media  screen and (max-width: 640px) {
+.distracao-section .menu-list{
+gap: 60px;
+}
+
+.distracao-section .menu-list .menu-item{
+    width: 100%;
+    }
+}
+
 /*Seção sobre nós*/
 .section-title{
     text-align: center;
@@ -320,6 +358,12 @@ height: 180px;
 object-fit: cover;
 margin-bottom: 50px;
 border-radius:var(--border-radius-circle);
+cursor: zoom-in;
+transition: 0.4s ease;
+}
+
+.about-section .about:hover .user-image{
+    transform: scale(1.2);
 }
 
     .about-section .about .name{
