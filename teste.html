@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Humor</title>
+</head>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+align-items: center;
+justify-content: space-around;
+background-color: #7e7ed2;
+}
+
+/* Caixa branca onde fica as coisas */
+.caixaBranca {
+margin-top: 240px;
+    margin: 230px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Lista de emojis */
+.lista-emoji {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Botões de emoji */
+.emoji-btn {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Efeito quando passa o mouse */
+.emoji-btn:hover, .emoji-btn.selected {
+    border: 2px solid #8679d3;
+    background-color: #f3f3f3;
+}
+
+/* Caixa de texto onde o emoji selecionado aparece */
+#selecaoEmoji {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+    width: 60px;
+    border: 2px solid #8679d3;
+    border-radius: 5px;
+    text-align: center;
+}
+/*BTN VOLTAR*/
+a {
+    margin: 230px auto;
+justify-content: space-around;
+text-decoration: none;
+padding: 12px 18px;
+width: 50px;
+color:#5543bc ;
+background: rgb(255, 255, 255);
+cursor: pointer;
+border: 2px;
+border-radius: 30px;
+border-color: white;
+transition: 0.3s ease;
+}
+
+.btn:hover{
+    background: rgb(114, 104, 176);
+    color:white;
+    border: 2px;
+    border-color: white;
+    transition: 0.3s ease;
+
+}
+
+
+</style>
+<body>
+
+    <!--botao voltar-->
+    <a href="index.html" class="btn">Voltar</a>
+   <!-- <div class="btn1">Enviar</div>-->
+
+    <!--Comentei algumas partes para me lembrar oq cada coisa é :)-->
+    <div class="caixaBranca">
+        <h2>Como você está se sentindo hoje?</h2>
+        <!-- Lista de Emojis -->
+        <div class="lista-emoji">
+            <span class="emoji-btn" onclick="selecionarEmoji('😍')">😍</span>
+            <span class="emoji-btn" onclick="selecionarEmoji('😁')">😁</span>
+            <span class="emoji-btn" onclick="selecionarEmoji('😊')">😊</span>
+            <span class="emoji-btn" onclick="selecionarEmoji('🙂')">🙂</span>
+            <span class="emoji-btn" onclick="selecionarEmoji('😔')">😔</span>
+            <span class="emoji-btn" onclick="selecionarEmoji('😢')">😢</span>
+        </div>
+
+        <!-- Caixa onde o emoji escolhido aparece -->
+        <label>Seu emoji do dia:</label>
+        <input type="text" id="selecaoEmoji" readonly>
+    </div>
+    <script>
+        // Função para selecionar um emoji e mostrar na caixa de texto
+        function selecionarEmoji(emoji) {
+            document.getElementById("selecaoEmoji").value = emoji;
+
+            // Remove o destaque de todos os botões
+            let botoes = document.querySelectorAll('.emoji-btn');
+            botoes.forEach(botao => botao.classList.remove('selected'));
+
+            // Adiciona destaque ao botão clicado
+            event.target.classList.add('selected');
+        }
+    </script>
+</body>
+</html>

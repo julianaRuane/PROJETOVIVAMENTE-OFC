@@ -14,7 +14,7 @@
 /*paleta de cor*/
 --white-color: #fff;
 --dark-color: rgb(0, 0, 0);
---primary-color: rgb(85, 67, 188) ;
+--primary-color: #5543bc ;
 --secondary-color: rgb(56, 33, 138);
 --ligth-pink-color: #fff;
 --medium-gray-color: #d3b5fd;
@@ -290,10 +290,19 @@ margin-right: 0px;
     table td, table th{
         border: 2px solid rgba(86, 82, 114, 0.89) ;
     padding: 50px;
+
+    }
+
+    table th{
+        font-size: var(--font-size-m);
+    }
+
+    table td{    cursor: pointer;
     }
 
     table th, table td {
-background: rgb(164, 164, 233)
+background: #a4a4e9;
+/*text-align: left;*/
     }
 
     table {
@@ -306,6 +315,8 @@ width: 100%;
         caption-side: top;
         text-align: left;
     margin-bottom: 10px;
+    font-size: var(--font-size-n);
+    color: #aaa;
     }
     
 
