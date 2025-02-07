@@ -288,12 +288,12 @@ margin-right: 0px;
 /*seção distrações*/
 
     table td, table th{
-        border: 2px solid rgb(85, 67, 188) ;
+        border: 2px solid rgba(86, 82, 114, 0.89) ;
     padding: 50px;
     }
 
-    table th {
-background: var(--primary-color);
+    table th, table td {
+background: rgb(164, 164, 233)
     }
 
     table {
@@ -584,4 +584,65 @@ font-size: var(--font-size-m);
         background: var(--primary-color);
     }
 
- 
+ /*SEÇÃO DE KELVEN*/
+ <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como você está se sentindo hoje?</title>
+</head>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background-color: #e6e6fa;
+}
+
+/* Caixa branca onde fica as coisas */
+.caixaBranca {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Lista de emojis */
+.lista-emoji {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Botões de emoji */
+.emoji-btn {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Efeito quando passa o mouse */
+.emoji-btn:hover, .emoji-btn.selected {
+    border: 2px solid #7b68ee;
+    background-color: #f3f3f3;
+}
+
+/* Caixa de texto onde o emoji selecionado aparece */
+#selecaoEmoji {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+    width: 60px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    text-align: center;
+}
