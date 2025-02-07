@@ -287,7 +287,29 @@ margin-right: 0px;
 
 /*seção distrações*/
 
-.distracao-section .menu-list {
+    table td, table th{
+        border: 2px solid rgb(85, 67, 188) ;
+    padding: 50px;
+    }
+
+    table th {
+background: var(--primary-color);
+    }
+
+    table {
+border-collapse: collapse;
+width: 100%;
+
+}
+
+    table caption {
+        caption-side: top;
+        text-align: left;
+    margin-bottom: 10px;
+    }
+    
+
+/*.distracao-section .menu-list {
 
 display: flex;
 flex-wrap: wrap;
@@ -321,7 +343,7 @@ gap: 60px;
 .distracao-section .menu-list .menu-item{
     width: 100%;
     }
-}
+}*/
 
 /*Seção podcast*/
 
