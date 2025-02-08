@@ -298,6 +298,8 @@ margin-right: 0px;
     }
 
     table td{    cursor: pointer;
+        text-decoration: none;
+
     }
 
     table th, table td {
