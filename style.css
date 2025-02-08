@@ -15,7 +15,7 @@
 --white-color: #fff;
 --dark-color: rgb(0, 0, 0);
 --primary-color: #5543bc ;
---secondary-color: rgb(56, 33, 138);
+--secondary-color: #38218a;
 --ligth-pink-color: #fff;
 --medium-gray-color: #d3b5fd;
 
@@ -288,7 +288,7 @@ margin-right: 0px;
 /*seção distrações*/
 
     table td, table th{
-        border: 2px solid rgba(86, 82, 114, 0.89) ;
+        border: 2px solid #3f386ee3 ;
     padding: 40px;
 
     }
@@ -303,7 +303,7 @@ margin-right: 0px;
     }
 
     table th, table td {
-background: #a4a4e9;
+background: #7f77df;
 /*text-align: left;*/
     }
 
@@ -318,7 +318,7 @@ width: 100%;
         text-align: left;
     margin-bottom: 10px;
     font-size: var(--font-size-n);
-    color: #aaa;
+    color: #534d99;
     }
     
 
@@ -420,6 +420,8 @@ border-radius: 100%;
 .podcast-card:is(:hover, :focus) .carde-banner-icon {
     background-color: var(--primary-color);
     color: var(--primary-color)
+
+    
 }
 
 .card-meta{
@@ -471,6 +473,8 @@ background: var(--dark-color);
     left: 0;
 bottom: -28px;
 transition: 0.4s;
+
+
 }
 
 .card-title:hover:after{
@@ -481,6 +485,7 @@ transition: 0.4s;
 
 .podcast-card:is(:hover, :focus) .card-title {
 background-size: 100% 2px;
+
 
 }
 
@@ -524,6 +529,75 @@ justify-content: space-between;
 }*/
 
 
+/*Seção ATENDIMENTOS*/
+
+.testimonials {
+    
+}
+
+.testimonials-box{
+
+    background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+
+.testimonials .heading {
+    margin-bottom: 5rem;
+}
+
+.testimonials-box img{
+
+    width: 12rem;
+    border-radius: 50%;
+    border: 3px solid var(--secondary-color);
+    /*box-shadow: 0 0 25px var(--secondary-color);*/
+}
+
+.wrapper{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 4rem;
+}
+
+.testimonials-item{
+    margin-top: 40px;
+    min-height: 550px;
+    max-width: 450px;
+    background: #7f77df;
+    border: 3px solid var(--secondary-color);
+    border-radius: var(--border-radius-m);
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    gap: 1.5rem;
+    color: #561b8c;
+    transition: 0.4s ease-in-out;
+}
+
+.testimonials-item:hover{
+
+ color: white;
+    background-color: var(--primary-color);
+   border: 3px solid black;
+   transform: translateY(-10px)scale(1.07);
+   /*box-shadow: 0 0 20px var(--primary-color);*/
+}
+
+
+
+
+
+
+
+
 /*Seção sobre nós*/
 .section-title{
     text-align: center;
@@ -548,6 +622,7 @@ border-radius: var(--border-radius-s);
 }
 
 .about-section .about {
+    
     display: flex;
     padding: 35px;
     text-align: center;
