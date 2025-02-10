@@ -144,7 +144,7 @@ background: var(--primary-color);
 
 .hero-section .hero-details .subtitle{
     margin-top: 8px;
-    max-width: 45%;
+    max-width: 50%;
     font-size: var(--font-size-xl);
     font-weight: ]var(--font-weight-semibold);
 }
@@ -532,7 +532,8 @@ justify-content: space-between;
 /*Seção ATENDIMENTOS*/
 
 .testimonials {
-    
+  
+
 }
 
 .testimonials-box{
@@ -735,4 +736,13 @@ background-color: #e6e6fa;
     border: 1px solid #aaa;
     border-radius: 5px;
     text-align: center;
+}
+
+.feedback{
+
+   text-align: justify;
+}
+
+p{
+    text-align: left;
 }
